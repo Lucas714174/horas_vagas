@@ -3,15 +3,14 @@
 massa = [200,200,200,200,200,200,200,200,200,200,251,251,251,251,251,251,251,251,251,251,251,251,251,251,
          253,253,253,253,253,253,253,253,253,253,253,253,253,253,253,257,257,257,257,257,257,257,257,257,
          257,257,257,260,260,260,260,260,260,260,260]
+
 import numpy
 #desvio padrão
 x= numpy.std(massa)
 print(f'O desvio padrão é igual à: {x:.2f}')
-
 #media
 m = numpy.mean(massa)
 print(f'A média é igual à {m:.2f} Kg')
-
 #variância
 v = numpy.var(massa)
 print(f'A variância é igual à: {v:.2f} Kg²')
