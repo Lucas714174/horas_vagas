@@ -78,3 +78,26 @@ plt.title("Histograma do número de amigos")
 plt.xlabel("N° de amigos")
 plt.ylabel("N° de pessoas")
 plt.show()
+
+names =  ['Lucas', 'Alice', 'Thiago', 'João', 'Cássia']
+for i, name in enumerate(names):
+  print(f" Seja bem-vindo(a) {name}")
+import random
+my_best_friend = random.choice(names)
+print(f"Você foi escolhido(a) {my_best_friend}")
+
+import json
+# Abrir o arquivo json.json
+with open("json.json") as file:
+    # Carregar seu conteúdo e torná-lo um novo dicionário
+    data = json.load(file)
+
+    # Excluir o par chave-valor "client" de cada pedido
+    #for order in data["dados"]:
+       # del order["_time"]
+
+# Abrir (ou criar) um arquivo orders_new.json
+# e armazenar a nova versão dos dados.
+#with open("orders_new.json", 'w') as file:
+    #json.dump(data, file)
+print(json.dumps(data, indent=4,   sort_keys=True , separators=(". ", " = ")))
