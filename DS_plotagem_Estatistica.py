@@ -186,5 +186,7 @@ while(1):
 import pandas as pd
 df = pd.read_csv('data.csv')
 print(df.to_string())
+#df = df[refugos1mld.csv].str.split(';')
+#print(df)
 
 
